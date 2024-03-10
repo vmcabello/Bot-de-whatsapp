@@ -1,3 +1,5 @@
+#AUTOR: vm.cabello
+
 import pyautogui
 import time
 import hashlib
