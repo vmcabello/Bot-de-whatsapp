@@ -21,13 +21,12 @@ Antes de usar este bot, você precisará:
 
 Você pode instalar as bibliotecas necessárias com o seguinte comando no prompt de comandos do windows (cmd):
 
-pip install pyautogui pytesseract Pillow
+    pip install pyautogui pytesseract Pillow
 
 Instalando Tesseract-OCR
-
-    Windows: Baixe e instale o Tesseract via GitHub oficial: https://github.com/UB-Mannheim/tesseract/wiki
-    Linux: Use sudo apt-get install tesseract-ocr.
-    macOS: Use brew install tesseract.
+   Windows: Baixe e instale o Tesseract via GitHub oficial: https://github.com/UB-Mannheim/tesseract/wiki
+   Linux: Use sudo apt-get install tesseract-ocr.
+   macOS: Use brew install tesseract.
 
 Configuração  
 
@@ -49,15 +48,15 @@ Atualize o Script bot.py:
     capturar_e_transcrever_texto com os valores obtidos:
 
      def capturar_e_transcrever_texto():
-    x, y, largura, altura = 618, 844, 800, 68  # Atualize esses valores
-    # Resto do código... 
-    
+    x, y, largura, altura = 618, 844, 800, 68  # Atualize esses valores com as coordenadas de sua tela 
+    onde as mensagens de whatsapp aparecem.
+     
 Atualize também as coordenadas de clique (campo_texto_x, campo_texto_y) na função responder_mensagem:
 
     def responder_mensagem():
-    campo_texto_x, campo_texto_y = 1043, 967  # Atualize esses valores
-    # Resto do código...
-
+    campo_texto_x, campo_texto_y = 1043, 967  # Atualize esses valores onde se encontra o campo de 
+    mensagem, para que o bot certifique que está realmente digitando a mensagem antes de enviá-la.
+   
 Configurando Palavras-chave:    
 Para personalizar quais mensagens o bot deve responder, ajuste as palavras-chave positivas e negativas na função deve_responder. 
 Palavras-chave positivas são aquelas que devem estar presentes para que uma resposta seja enviada, enquanto palavras-chave negativas 
