@@ -82,14 +82,14 @@ Como Isso Funciona na Prática:
 
 O bot lê uma mensagem. Se a mensagem incluir palavras como "irmãos penteados", "clínica", "médica" ou "ficha verde", sem incluir "emergência" ou "ficha vermelha", o bot considera a mensagem como relevante e procede com a resposta "pego" para aceitar o plantão pelo usuário. Caso contrário, a mensagem é ignorada. Isso permite um filtro eficiente, focando apenas nas mensagens de interesse e excluindo as que contêm indicadores de serem não relevantes ou fora do escopo desejado pelo usuário.
 
-
-Uso e créditos
-
 Com o bot configurado, execute o script principal para iniciar a automação no cmd:
 
     python bot.py
 
 O bot começará a monitorar as mensagens e responderá automaticamente com base nos critérios definidos no script.
+
 Observações Finais
+
   Monitoramento: Supervisione o funcionamento do bot, especialmente nas primeiras execuções, para garantir que tudo esteja funcionando como esperado.
+
   Personalização: Adapte os critérios de resposta no script bot.py conforme necessário para atender às suas necessidades específicas.
