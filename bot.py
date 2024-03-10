@@ -56,4 +56,4 @@ while True:
     texto = capturar_e_transcrever_texto()
     if texto and deve_responder(texto):
         responder_mensagem()
-    time.sleep(1)
+    time.sleep(0.5)
