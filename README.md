@@ -80,7 +80,7 @@ Neste trecho de código, a função re.search() é usada duas vezes para aplicar
 
 Como Isso Funciona na Prática:
 
-O bot lê uma mensagem. Se a mensagem incluir palavras como "irmãos penteados", "clínica", "médica" ou "ficha verde", sem incluir "emergência" ou "ficha vermelha", o bot considera a mensagem como relevante e procede com a resposta predefinida. Caso contrário, a mensagem é ignorada. Isso permite um filtro eficiente, focando apenas nas mensagens de interesse e excluindo as que contêm indicadores de serem não relevantes ou fora do escopo desejado pelo usuário.
+O bot lê uma mensagem. Se a mensagem incluir palavras como "irmãos penteados", "clínica", "médica" ou "ficha verde", sem incluir "emergência" ou "ficha vermelha", o bot considera a mensagem como relevante e procede com a resposta "pego" para aceitar o plantão pelo usuário. Caso contrário, a mensagem é ignorada. Isso permite um filtro eficiente, focando apenas nas mensagens de interesse e excluindo as que contêm indicadores de serem não relevantes ou fora do escopo desejado pelo usuário.
 
 
 Uso e créditos
