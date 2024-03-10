@@ -31,8 +31,9 @@ Configuração
 
     Configure a Imagem da Seta:
     A imagem seta.png na pasta imagens é usada para identificar o botão de rolagem para baixo no tema 
-    escuro do WhatsApp. Se você estiver usando um tema diferente, pode ser necessário capturar uma 
-    nova imagem da seta correspondente ao seu tema e substituir a imagem existente.
+    escuro do WhatsApp. Se você estiver usando o tema escuro, você não precisa mudar a imagem, caso 
+    contrário, será necessário capturar uma nova imagem da seta correspondente ao seu tema e substituir 
+    a imagem existente.
 
 Encontre as Coordenadas Necessárias:
 Use o script pos.py para encontrar as coordenadas x, y para as áreas de captura de tela e os locais de 
