@@ -91,6 +91,5 @@ Com o bot configurado, execute o script principal para iniciar a automação no 
 
 O bot começará a monitorar as mensagens e responderá automaticamente com base nos critérios definidos no script.
 Observações Finais
-
-    Monitoramento: Supervisione o funcionamento do bot, especialmente nas primeiras execuções, para garantir que tudo esteja funcionando como esperado.
-    Personalização: Adapte os critérios de resposta no script bot.py conforme necessário para atender às suas necessidades específicas.
+  Monitoramento: Supervisione o funcionamento do bot, especialmente nas primeiras execuções, para garantir que tudo esteja funcionando como esperado.
+  Personalização: Adapte os critérios de resposta no script bot.py conforme necessário para atender às suas necessidades específicas.
