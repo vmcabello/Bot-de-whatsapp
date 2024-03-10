@@ -25,9 +25,7 @@ Você pode instalar as bibliotecas necessárias com o seguinte comando no prompt
 
 Instalando Tesseract-OCR
    Windows: Baixe e instale o Tesseract via GitHub oficial: https://github.com/UB-Mannheim/tesseract/wiki
-   Linux: Use sudo apt-get install tesseract-ocr.
-   macOS: Use brew install tesseract.
-
+ 
 Configuração  
 
     Clone ou baixe este projeto para o seu computador.
