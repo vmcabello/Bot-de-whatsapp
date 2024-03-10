@@ -1,4 +1,4 @@
-Bot Automatizado para Captação de Plantões Médicos
+Bot  para Captação de Plantões Médicos por vm.cabello
 
 Se você é um médico que trabalha em plantões de clínica médica ou emergência, provavelmente está familiarizado com a insanidade que é conseguir plantões em grupos de WhatsApp, onde há uma perpétua competição entre 
 médicos, especialmente recém-formados, para responder o mais rapidamente possível às oportunidades de coberturas. Assim que me formei, achei absurda a ideia de ter que ficar de plantão no WhatsApp para pegar plantões, 
