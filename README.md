@@ -1,5 +1,5 @@
 Se você é um médico que trabalha em plantões de clínica médica ou emergência, provavelmente está familiarizado com a insanidade que é conseguir plantões em grupos de WhatsApp, onde há uma perpétua competição entre 
-médicos, especialmente recém-formados, para responder o mais rapidamente possível às oportunidades de coberturas. Assim que me formei, achei absurdo a ideia de ter que ficar de plantão no WhatsApp para pegar plantões, 
+médicos, especialmente recém-formados, para responder o mais rapidamente possível às oportunidades de coberturas. Assim que me formei, achei absurda a ideia de ter que ficar de plantão no WhatsApp para pegar plantões, 
 razão pela qual decidi desenvolver este bot.
 Ele foi criado para monitorar constantemente meu grupo de plantões favorito, filtrando as ofertas que me convém e as respondendo, tudo em menos de 1 segundo. 
 Pode parecer difícil configurá-lo pela primeira vez, mas abaixo apresento um guia detalhado de como você pode configurar este bot em sua própria máquina. 
