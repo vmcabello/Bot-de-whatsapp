@@ -11,10 +11,9 @@ Bom grinding de plantões! :)
 Pré-requisitos
 
 Antes de usar este bot, você precisará:
-
-    Python 3.8 ou superior instalado no seu sistema: https://www.python.org/downloads/
-    Tesseract-OCR instalado no seu sistema.
-    As seguintes bibliotecas Python instaladas:
+1) Python 3.8 ou superior instalado no seu sistema: https://www.python.org/downloads/
+2) Tesseract-OCR instalado no seu sistema.
+3) As seguintes bibliotecas Python:
         pyautogui
         pytesseract
         Pillow
@@ -31,21 +30,25 @@ Configuração
     Clone ou baixe este projeto para o seu computador.
 
     Configure a Imagem da Seta:
-    A imagem seta.png na pasta imagens é usada para identificar um botão específico no tema escuro do 
-    WhatsApp. Se você estiver usando um tema diferente, pode ser necessário capturar uma nova imagem 
-    da seta correspondente ao seu tema e substituir a imagem existente.
+    A imagem seta.png na pasta imagens é usada para identificar o botão de rolagem para baixo no tema 
+    escuro do WhatsApp. Se você estiver usando um tema diferente, pode ser necessário capturar uma 
+    nova imagem da seta correspondente ao seu tema e substituir a imagem existente.
 
-    Encontre as Coordenadas Necessárias:
-    Use o script pos.py para encontrar as coordenadas x, y para as áreas de captura de tela e os 
-    locais de clique necessários em seu computador. Execute pos.py e mova o cursor para os locais 
-    desejados para obter as coordenadas.
+Encontre as Coordenadas Necessárias:
+Use o script pos.py para encontrar as coordenadas x, y para as áreas de captura de tela e os locais de 
+clique necessários em seu computador. 
+Execute pos.py com o comando abaixo no cmd e mova o cursor para os locais desejados para descobrir as 
+suas coordenadas:
+
+    python pos.py
+    
 Atualize o Script bot.py:
     Com as coordenadas em mãos, atualize as variáveis em bot.py para corresponder às posições corretas 
     na sua tela:
     No arquivo bot.py, atualize as variáveis de coordenadas (x, y, largura, altura) na função 
     capturar_e_transcrever_texto com os valores obtidos:
 
-     def capturar_e_transcrever_texto():
+    def capturar_e_transcrever_texto():
     x, y, largura, altura = 618, 844, 800, 68  # Atualize esses valores com as coordenadas de sua tela 
     onde as mensagens de whatsapp aparecem.
      
@@ -79,11 +82,11 @@ Como Isso Funciona na Prática:
 O bot lê uma mensagem. Se a mensagem incluir palavras como "irmãos penteados", "clínica", "médica" ou "ficha verde", sem incluir "emergência" ou "ficha vermelha", o bot considera a mensagem como relevante e procede com a resposta predefinida. Caso contrário, a mensagem é ignorada. Isso permite um filtro eficiente, focando apenas nas mensagens de interesse e excluindo as que contêm indicadores de serem não relevantes ou fora do escopo desejado pelo usuário.
 
 
-Uso
+Uso e créditos
 
 Com o bot configurado, execute o script principal para iniciar a automação no cmd:
 
-python bot.py
+    python bot.py
 
 O bot começará a monitorar as mensagens e responderá automaticamente com base nos critérios definidos no script.
 Observações Finais
