@@ -29,47 +29,53 @@ Instalando Tesseract-OCR
     Linux: Use sudo apt-get install tesseract-ocr.
     macOS: Use brew install tesseract.
 
-Configuração
+Configuração  
 
     Clone ou baixe este projeto para o seu computador.
 
     Configure a Imagem da Seta:
-    A imagem seta.png na pasta imagens é usada para identificar um botão específico no tema escuro do WhatsApp. Se você estiver usando um tema diferente, pode ser necessário capturar uma nova imagem da seta correspondente ao seu tema e substituir a imagem existente.
+    A imagem seta.png na pasta imagens é usada para identificar um botão específico no tema escuro do 
+    WhatsApp. Se você estiver usando um tema diferente, pode ser necessário capturar uma nova imagem 
+    da seta correspondente ao seu tema e substituir a imagem existente.
 
     Encontre as Coordenadas Necessárias:
-    Use o script pos.py para encontrar as coordenadas x, y para as áreas de captura de tela e os locais de clique necessários em seu computador. Execute pos.py e mova o cursor para os locais desejados para obter as coordenadas.
+    Use o script pos.py para encontrar as coordenadas x, y para as áreas de captura de tela e os 
+    locais de clique necessários em seu computador. Execute pos.py e mova o cursor para os locais 
+    desejados para obter as coordenadas.
+Atualize o Script bot.py:
+    Com as coordenadas em mãos, atualize as variáveis em bot.py para corresponder às posições corretas 
+    na sua tela:
+    No arquivo bot.py, atualize as variáveis de coordenadas (x, y, largura, altura) na função 
+    capturar_e_transcrever_texto com os valores obtidos:
 
-    Atualize o Script bot.py:
-    Com as coordenadas em mãos, atualize as variáveis em bot.py para corresponder às posições corretas na sua tela:
-    
-    No arquivo bot.py, atualize as variáveis de coordenadas (x, y, largura, altura) na função capturar_e_transcrever_texto com os valores obtidos:
-def capturar_e_transcrever_texto():
+     def capturar_e_transcrever_texto():
     x, y, largura, altura = 618, 844, 800, 68  # Atualize esses valores
-    # Resto do código...
+    # Resto do código... 
+    
+Atualize também as coordenadas de clique (campo_texto_x, campo_texto_y) na função responder_mensagem:
 
-    Atualize também as coordenadas de clique (campo_texto_x, campo_texto_y) na função responder_mensagem:
-def responder_mensagem():
+    def responder_mensagem():
     campo_texto_x, campo_texto_y = 1043, 967  # Atualize esses valores
     # Resto do código...
 
-    Configurando Palavras-chave:
+Configurando Palavras-chave:    
 Para personalizar quais mensagens o bot deve responder, ajuste as palavras-chave positivas e negativas na função deve_responder. 
 Palavras-chave positivas são aquelas que devem estar presentes para que uma resposta seja enviada, enquanto palavras-chave negativas 
 previnem a resposta caso estejam presentes na mensagem. Vamos ajustar o trecho do código para incluir as palavras-chave "irmãos penteados", 
 "clínica", "médica", "ficha verde" como critérios para as mensagens às quais o bot deve responder, e "emergência", "ficha vermelha" como 
 critérios para as mensagens que o bot deve ignorar:
 
-if re.search(r'irmãos penteados|clínica|médica|ficha verde', texto, re.IGNORECASE) and not re.search(r'emergência|ficha vermelha', texto, re.IGNORECASE):
+    if re.search(r'irmãos penteados|clínica|médica|ficha verde', texto, re.IGNORECASE) and not re.search(r'emergência|ficha vermelha', texto, re.IGNORECASE):
 
 Explicação:
 
 Neste trecho de código, a função re.search() é usada duas vezes para aplicar a lógica de filtragem:
 
-    A primeira chamada de re.search() procura por qualquer ocorrência das palavras-chave positivas no texto. Isso é feito utilizando o operador | (pipe) para significar "OU" entre as palavras-chave, portanto, se qualquer uma das palavras-chave "irmãos penteados", "clínica", "médica", ou "ficha verde" for encontrada no texto, essa parte da condição será avaliada como verdadeira.
+ A primeira chamada de re.search() procura por qualquer ocorrência das palavras-chave positivas no texto. Isso é feito utilizando o operador | (pipe) para significar "OU" entre as palavras-chave, portanto, se qualquer uma das palavras-chave "irmãos penteados", "clínica", "médica", ou "ficha verde" for encontrada no texto, essa parte da condição será avaliada como verdadeira.
 
-    A segunda chamada de re.search() procura por qualquer ocorrência das palavras-chave negativas no texto, também usando o operador | para separá-las. Se qualquer uma das palavras "emergência" ou "ficha vermelha" for encontrada no texto, essa parte da condição será avaliada como verdadeira.
+ A segunda chamada de re.search() procura por qualquer ocorrência das palavras-chave negativas no texto, também usando o operador | para separá-las. Se qualquer uma das palavras "emergência" ou "ficha vermelha" for encontrada no texto, essa parte da condição será avaliada como verdadeira.
 
-    O and not entre as duas chamadas de re.search() serve para garantir que o código só prosseguirá (isto é, considerará o texto como adequado para resposta) se a primeira condição for verdadeira (ou seja, contém pelo menos uma das palavras-chave positivas) e a segunda condição for falsa (ou seja, não contém nenhuma das palavras-chave negativas).
+ O and not entre as duas chamadas de re.search() serve para garantir que o código só prosseguirá (isto é, considerará o texto como adequado para resposta) se a primeira condição for verdadeira (ou seja, contém pelo menos uma das palavras-chave positivas) e a segunda condição for falsa (ou seja, não contém nenhuma das palavras-chave negativas).
 
 Como Isso Funciona na Prática:
 
