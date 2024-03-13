@@ -25,7 +25,7 @@ Você pode instalar as bibliotecas necessárias com o seguinte comando no prompt
 Instalando Tesseract-OCR
    Windows: Baixe e instale o Tesseract via GitHub oficial: https://github.com/UB-Mannheim/tesseract/wiki
  
-Configuração  
+Configuração (só é necessária na primeira vez)
 1) Clone ou baixe este projeto para o seu computador.
 
 2) Configure a Imagem da Seta (opcional):
