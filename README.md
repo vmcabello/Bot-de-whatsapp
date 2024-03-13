@@ -45,7 +45,7 @@ suas coordenadas:
     Agora que você sabe as coordenadas, atualize as variáveis em bot.py para corresponder às posições corretas 
     na sua tela:
     No arquivo bot.py, atualize as variáveis de coordenadas (x, y, largura, altura) na função 
-    capturar_e_transcrever_texto com os valores obtidos para a área de men:
+    capturar_e_transcrever_texto com os valores obtidos para a área de mensagens:
 
         def capturar_e_transcrever_texto():
         x, y, largura, altura = 618, 844, 800, 68  # Atualize esses valores com as coordenadas de sua tela 
