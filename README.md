@@ -3,7 +3,7 @@ Bot  para Captação de Plantões Médicos por vm.cabello
 Se você é um médico que trabalha em plantões de clínica médica ou emergência, provavelmente está familiarizado com a insanidade que é conseguir plantões em grupos de WhatsApp, onde há uma perpétua competição entre 
 médicos (especialmente recém-formados) para responder o mais rapidamente possível às oportunidades de coberturas. Sempre achei absurda a ideia de ter que ficar de plantão no WhatsApp para pegar plantões, 
 razão pela qual desenvolvi este bot.
-O bot monitora constantemente o seu grupo de Whatsapp de plantões favorito, filtrando as ofertas de interesse e as respondendo, tudo em menos de 1 segundo. 
+O bot monitora constantemente o seu grupo de Whatsapp de plantões favorito, filtrando as ofertas de interesse e as respondendo, tudo em menos de meio (1/2) segundo. 
 Pode parecer difícil configurá-lo pela primeira vez, mas abaixo apresento um guia detalhado de como você pode configurar este bot em sua própria máquina. 
 Sinta-se à vontade para utilizar o código como desejar, só não se esqueça de dar os devidos créditos. 
 Bom grinding de plantões! :)
