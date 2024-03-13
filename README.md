@@ -11,7 +11,7 @@ Bom grinding de plantões! :)
 Pré-requisitos
 
 Antes de usar este bot, você precisará:
-1) Python 3.8 ou superior instalado no seu sistema: https://www.python.org/downloads/
+1) Python 3.8 ou superior instalado no seu sistema (use o link a seguir): https://www.python.org/downloads/
 2) Tesseract-OCR instalado no seu sistema.
 3) As seguintes bibliotecas Python:
         pyautogui
@@ -34,14 +34,14 @@ Configuração
     contrário, será necessário atualizar a imagem da seta correspondente ao seu tema.
 
 3) Descubra as Coordenadas Necessárias:
-Use o script pos.py para encontrar as coordenadas x, y para as áreas onde aparecem as mensagens, a seta de rolagem e os locais de 
-clique necessários em seu computador. 
+Use o script pos.py para encontrar as coordenadas x, y para as áreas onde aparecem as mensagens (de preferência,
+no canto inferior do campo de mensagens), a seta de rolagem e a caixa de enviar texto em seu computador. 
 Execute pos.py com o comando abaixo no cmd e mova o cursor sobre as áreas de interesse para descobrir as 
 suas coordenadas:
 
         python pos.py
     
-4) Atualize o Script bot.py:
+5) Atualize o Script bot.py:
     Agora que você sabe as coordenadas, atualize as variáveis em bot.py para corresponder às posições corretas 
     na sua tela:
     No arquivo bot.py, atualize as variáveis de coordenadas (x, y, largura, altura) na função 
@@ -51,7 +51,7 @@ suas coordenadas:
         x, y, largura, altura = 618, 844, 800, 68  # Atualize esses valores com as coordenadas de sua tela 
         onde as mensagens de whatsapp aparecem.
      
-Atualize também as coordenadas de clique (campo_texto_x, campo_texto_y) na função responder_mensagem:
+Atualize também as coordenadas do campo de mensagem (campo_texto_x, campo_texto_y) na função responder_mensagem:
 
     def responder_mensagem():
     campo_texto_x, campo_texto_y = 1043, 967  # Atualize esses valores onde se encontra o campo de 
@@ -73,7 +73,7 @@ critérios para as mensagens que o bot deve ignorar:
 
 Como Isso Funciona na Prática:
 
-O bot lê uma mensagem. Se a mensagem incluir palavras como "irmãos penteados", "clínica", "médica" ou "ficha verde", sem incluir "emergência" ou "ficha vermelha", o bot considera a mensagem como relevante e procede com a resposta "pego" para aceitar o plantão pelo usuário. Caso contrário, a mensagem é ignorada. Isso permite um filtro eficiente, focando apenas nas mensagens de interesse e excluindo as que contêm indicadores de serem não relevantes ou fora do escopo desejado pelo usuário.
+O bot lê uma mensagem. Se a mensagem incluir palavras como "irmãos penteados", "clínica", "médica" ou "ficha verde", sem incluir "emergência" ou "ficha vermelha", o bot considera a mensagem como relevante e procede com a resposta "pego" para aceitar o plantão pelo usuário. Caso contrário, a mensagem é ignorada. Isso permite um filtro eficiente, focando apenas nas mensagens de interesse e excluindo as que contêm indicadores de serem não relevantes ou fora do escopo desejado.
 
 Com o bot configurado, execute o script principal para iniciar a automação no cmd:
 
