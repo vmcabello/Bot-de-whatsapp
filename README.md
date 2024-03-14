@@ -86,3 +86,13 @@ Observações Finais
   Monitoramento: Supervisione o funcionamento do bot, especialmente nas primeiras execuções, para garantir que tudo esteja funcionando como esperado.
 
   Personalização: Adapte os critérios de resposta no script bot.py conforme necessário para atender às suas necessidades específicas.
+
+  FAQ:
+1- Por que usar o PyAutoGUI para criar um bot?
+R: Essa foi a solução que encontrei para permitir que o bot responda de maneira mais rápida possível, sem infringir os termos de uso do WhatsApp.
+
+2- Por que não recorrer a APIs externas ou clientes do WhatsApp?
+R: O uso desses recursos pode levar ao banimento da conta no WhatsApp.
+
+3- É necessário manter a janela do WhatsApp sempre aberta?
+R: Sim, infelizmente, essa é a única forma de impedir que o WhatsApp consiga distinguir um bot de um usuário humano.
